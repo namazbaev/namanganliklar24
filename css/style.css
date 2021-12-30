@@ -83,6 +83,10 @@ body {
     padding: 0 20px;
     margin: 0 auto;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 .site-header {
     padding-top: 40px;
     padding-bottom: 23px;
@@ -241,6 +245,9 @@ body {
 .sitenav {
     border-radius: 5px;
     margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
     background-color: #fff;
     box-shadow: 0px 2px 5px rgba(159, 159, 159, 0.19);
     -webkit-border-radius: 5px;
@@ -262,9 +269,6 @@ body {
 }
 .sitenav__link {
     display: block;
-    font-weight: 500;
-    font-size: 19px;
-    line-height: 23px;
     color: #515151;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -278,4 +282,36 @@ body {
 }
 .top-banner__link {
     display: flex;
+}
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .site-header {
+        padding-top: 20px;
+    }
+    .site-header-top {
+        align-items: stretch;
+    }
+    .exchange-rates {
+        order: -1;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 850px) {
+    .exchange-rates {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .sitenav {
+        font-size: 16px;
+        line-height: 20px;
+
+    }
 }
