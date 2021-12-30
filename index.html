@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -11,37 +11,47 @@
 </head>
 
 <body>
-    <a href="index.html" class="logo">
-        <img class="logo__img" src="images/logo.svg" alt="logo" width="303" height="33">
-    </a>
-    <ul class="exchange-rates">
-        <li class="exchange-rates__item">
-            <b class="exchange-rates__icon">&dollar;</b>
-            <span class="exchange-rates__value">10137.2</span>
-        </li>
-        <li class="exchange-rates__item">
-            <b class="exchange-rates__icon">P</b>
-            <span class="exchange-rates__value">138.26</span>
-        </li>
-        <li class="exchange-rates__item">
-            <b class="exchange-rates__icon">&euro;</b>
-            <span class="exchange-rates__value">10988.72</span>
-        </li>
-    </ul>
-    <div>
-        <button type="button" class="search-button">
-            <img class="search-button__img" src="images/icon-magnify.svg" alt="search" width="24" height="24">
-        </button>
-        <button type="button" class="language-toggler">
-            <img class="language-toggler__img" src="images/icon-russia-flag.svg" alt="language" width="20" height="20">
-            <span class="language-toggler__text">РУ</span>
-        </button>
-        <a class="telegram-join" href="https://tme.to/shakxzod_namazbaev" target="_blank">
-            <img class="telegram-join__img" src="images/icon-telegram.svg" alt="telegram" width="20" height="20">
-            <span class="telegram-join__text">Подписатся</span>
-        </a>
-    </div>
-
+    <!-- header section start -->
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header-top">
+                <a href="index.html" class="logo">
+                    <img class="logo__img" src="images/logo.svg" alt="logo" width="303" height="33">
+                </a>
+                <ul class="exchange-rates">
+                    <li class="exchange-rates__item">
+                        <b class="exchange-rates__icon">&dollar;</b>
+                        <span class="exchange-rates__value">10137.2</span>
+                    </li>
+                    <li class="exchange-rates__item">
+                        <b class="exchange-rates__icon">P</b>
+                        <span class="exchange-rates__value">138.26</span>
+                    </li>
+                    <li class="exchange-rates__item">
+                        <b class="exchange-rates__icon">&euro;</b>
+                        <span class="exchange-rates__value">10988.72</span>
+                    </li>
+                </ul>
+                <div class="site-header__actions">
+                    <button type="button" class="search-button">
+                        <img class="search-button__img" src="images/icon-magnify.svg" alt="search" width="24"
+                            height="24">
+                    </button>
+                    <button type="button" class="language-toggler">
+                        <img class="language-toggler__img" src="images/icon-russia-flag.svg" alt="language" width="20"
+                            height="20">
+                        <span class="language-toggler__text">РУ</span>
+                    </button>
+                    <a class="telegram-join" href="https://tme.to/shakxzod_namazbaev" target="_blank">
+                        <img class="telegram-join__img" src="images/icon-telegram.svg" alt="telegram" width="20"
+                            height="20">
+                        <span class="telegram-join__text">Подписатся</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
     <script src="js/main.js"></script>
 </body>
 
