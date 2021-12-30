@@ -110,10 +110,10 @@ body {
     background-color: #fff;
     box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
     border-radius: 5px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
 }
 .exchange-rates {
     display: flex;
@@ -134,8 +134,14 @@ body {
 }.site-header__language-toggler {
     margin-right: 24px;
 }
-.search-button {
+.search-button__wrapper {
     padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-button {
+    padding: 0;
     border: none;
     background-color: #fff;
     border-radius: 5px;
@@ -154,9 +160,15 @@ body {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+.language-toggler__wrapper {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
 .language-toggler__img {
     width: 20px;
     height: 20px;
+    margin-right: 5px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
