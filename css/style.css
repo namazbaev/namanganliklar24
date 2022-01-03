@@ -304,6 +304,92 @@ img {
     padding-top: 22px;
     padding-bottom: 38px;
 }
+.covid-info {
+    display: flex;
+    align-items: center;
+    padding: 30px 35px;
+    color: #000;
+    background: #F6F6F9;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.covid-info::before {
+    content: '';
+    width: 43px;
+    height: 45px;
+    margin-right: 25px;
+    background: url('../images/icon-covid.png') no-repeat center center / contain;
+}
+.covid-info__heading {
+    max-width: 235px;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 70px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #000000;
+}
+.covid-info__list {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.covid-info__list-item {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-left: 2px solid #F4CCD1;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.covid-info__item-title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+}
+.covid-info__list-item-value {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+}
+.covid-info__item-title--infected {
+    color: #DB0000;
+}
+.covid-info__list-item--infected {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-left-color: #EB5569;
+}
+.covid-info__list-item::before {
+    content: '';
+    width: 38px;
+    height: 40px;
+    margin-right: 18px;
+    background: no-repeat center center / contain;
+}
+.covid-info__list-item--infected::before {
+    background-image: url('../images/icon-emoji-mask.svg')
+}
+.covid-info__list-item--recovered::before {
+    background-image: url('../images/icon-smile.svg')
+}
+.covid-info__list-item--dead::before {
+    background-image: url('../images/icon-no.svg')
+}
+.covid-info__item-title--recovered {
+    color: #05B135;
+}
 .site-footer {
     padding: 18px 0;
     color: #fff;
