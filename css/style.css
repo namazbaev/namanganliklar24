@@ -64,6 +64,8 @@ html {
     box-sizing: inherit;
 }
 body {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     font-size: 15px;
     color: #434343;
@@ -296,6 +298,11 @@ img {
 }
 .top-banner__link {
     display: flex;
+}
+.main-content {
+    flex-grow: 1;
+    padding-top: 22px;
+    padding-bottom: 38px;
 }
 .site-footer {
     padding: 18px 0;
